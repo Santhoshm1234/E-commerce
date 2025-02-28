@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyper Mart - Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-emerald-700 text-white py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">Hyper Mart</h1>
+      <nav>
+        <a href="index.html" class="mx-2 hover:underline">Home</a>
+        <a href="products.html" class="mx-2 hover:underline">Products</a>
+        <a href="about.html" class="mx-2 hover:underline">About Us</a>
+        <a href="cart.html" class="mx-2 hover:underline"> 🛒 <span id="cart-count" class="bg-orange-500 text-white px-2 py-1 rounded-full"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <h2 class="text-3xl font-bold mb-6 text-emerald-800">Our Products</h2>
+    <div id="product-list" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Products will be dynamically loaded here -->
+    </div>
+    <!-- Move to Cart Button -->
+    <div class="text-center mt-8">
+      <a href="cart.html" class="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-300">Move to Cart</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-emerald-800 text-white py-4 text-center">
+    <p>&copy; 2023 Hyper Mart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

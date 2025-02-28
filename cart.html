@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyper Mart - Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-emerald-700 text-white py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">Hyper Mart</h1>
+      <nav>
+        <a href="index.html" class="mx-2 hover:underline">Home</a>
+        <a href="products.html" class="mx-2 hover:underline">Products</a>
+        <a href="about.html" class="mx-2 hover:underline">About Us</a>
+        <a href="cart.html" class="mx-2 hover:underline"> 🛒 <span id="cart-count" class="bg-orange-500 text-white px-2 py-1 rounded-full"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <h2 class="text-3xl font-bold mb-6 text-emerald-800">Your Cart</h2>
+    <div id="cart-items" class="space-y-4">
+      <!-- Cart items will be dynamically added here -->
+    </div>
+    <p class="text-xl font-bold mt-6">Total Amount: ₹<span id="total-amount">0</span></p>
+    <button onclick="showPaymentOptions()" class="mt-6 bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700">Place Order</button>
+
+    <!-- Payment Options Modal -->
+    <div id="payment-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+      <div class="bg-white p-6 rounded-lg w-96">
+        <h3 class="text-xl font-bold mb-4">Choose Payment Option</h3>
+        <form onsubmit="placeOrder(event)">
+          <label class="block mb-2"><input type="radio" name="payment" value="upi" required> UPI</label>
+          <label class="block mb-2"><input type="radio" name="payment" value="card" required> Credit/Debit Card</label>
+          <label class="block mb-2"><input type="radio" name="payment" value="pay-later" required> Pay Later</label>
+          <label class="block mb-4"><input type="radio" name="payment" value="cod" required> Cash on Delivery</label>
+          <button type="submit" class="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-emerald-700">Proceed</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-emerald-800 text-white py-4 text-center">
+    <p>&copy; 2023 Hyper Mart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

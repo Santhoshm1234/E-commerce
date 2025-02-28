@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyper Mart - About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-emerald-700 text-white py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">Hyper Mart</h1>
+      <nav>
+        <a href="index.html" class="mx-2 hover:underline">Home</a>
+        <a href="products.html" class="mx-2 hover:underline">Products</a>
+        <a href="about.html" class="mx-2 hover:underline">About Us</a>
+        <a href="cart.html" class="mx-2 hover:underline">🛒<span id="cart-count" class="bg-orange-500 text-white px-2 py-1 rounded-full"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-emerald-800 mb-8">About Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- About Text -->
+      <div>
+        <p class="text-gray-700 mb-6">
+          Welcome to <strong>Hyper Mart</strong>, your trusted partner for fresh and high-quality groceries. 
+          We are committed to providing the best shopping experience by offering a wide range of products 
+          at affordable prices, delivered straight to your doorstep.
+        </p>
+        <p class="text-gray-700 mb-6">
+          Our mission is to make grocery shopping convenient, reliable, and enjoyable. We source our 
+          products directly from local farmers and trusted suppliers to ensure freshness and quality. 
+          Whether you're looking for fresh fruits, vegetables, dairy, or bakery items, we've got you covered.
+        </p>
+        <p class="text-gray-700 mb-6">
+          At Hyper Mart, we believe in sustainability and supporting local communities. By choosing us, 
+          you're not only getting the best products but also contributing to a greener and healthier planet.
+        </p>
+      </div>
+
+      <!-- Image Section -->
+      <div class="flex justify-center items-center">
+        <img src="about.jpg" 
+             alt="About Us" 
+             class="rounded-lg shadow-md">
+      </div>
+    </div>
+
+    <!-- Our Values Section -->
+    <section class="mt-12">
+      <h3 class="text-2xl font-bold text-emerald-800 mb-6">Our Values</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h4 class="text-xl font-bold mb-2">Freshness</h4>
+          <p class="text-gray-700">We guarantee the freshness of all our products.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h4 class="text-xl font-bold mb-2">Quality</h4>
+          <p class="text-gray-700">We source only the best quality products for you.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h4 class="text-xl font-bold mb-2">Sustainability</h4>
+          <p class="text-gray-700">We support local farmers and sustainable practices.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-emerald-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p class="mb-4">&copy; 2023 Hyper Mart. All rights reserved.</p>
+      <p>Contact us: <a href="mailto:info@hypermart.com" class="underline">info@hypermart.com</a> | Phone: +91 1234567890</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
